@@ -28,9 +28,9 @@ echo
 echo "Installing Suckless utils"
 echo
 echo "cloning into .suckless"
-git clone https://github.com/zerkxes/st.git ~/.suckless
-git clone https://github.com/zerkxes/dwm.git ~/.suckless
-git clone https://git.suckless.org/dmenu ~/.suckless
+git clone https://github.com/zerkxes/st.git ~/.suckless/st
+git clone https://github.com/zerkxes/dwm.git ~/.suckless/dwm
+git clone https://git.suckless.org/dmenu ~/.suckless/dmenu
 cd ~/.suckless/dmenu/
 sudo make
 sudo make install

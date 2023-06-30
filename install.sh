@@ -5,7 +5,9 @@ echo
 echo "Setting up config files"
 echo
 mkdir -v ~/.config
-
+mkdir -v ~/.local/share/fonts/
+cp -rv ~/.dotfiles/font/* ~/.local/share/fonts/
+fc-cache
 cp -rv ~/.dotfiles/* ~/
 echo
 echo "Installing XORG display server"

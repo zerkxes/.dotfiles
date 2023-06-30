@@ -48,7 +48,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-feh --bg-max --randomize ~/aesthetic-wallpapers/images/* &
+feh --bg-max --randomize ~/Wallpapers/images/* &
 exec picom -b &
 ~/status.sh &
 exec dwm 

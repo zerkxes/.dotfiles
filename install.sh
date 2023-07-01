@@ -5,8 +5,8 @@ echo
 echo "Setting up config files"
 echo
 mkdir -v ~/.config
-mkdir -v ~/.local/share/fonts/
-cp -rv ~/.dotfiles/font/* ~/.local/share/fonts/
+sudo mkdir -pv /use/local/share/fonts/ttf
+sudo cp -rv ~/.dotfiles/font/* /usr/local/share/fonts/ttf
 fc-cache
 cp -rv ~/.dotfiles/* ~/
 echo
@@ -18,6 +18,8 @@ PKGS=(
 	'xorg-xinit'
 	'xf86-video-intel'
 	'xf86-input-libinput'
+	'make'
+	'libxft'
 )
 for PKG in "${PKGS[@]}"; do
 	echo "Installing: ${PKG}"

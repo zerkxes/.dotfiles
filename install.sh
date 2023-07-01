@@ -8,7 +8,7 @@ mkdir -v ~/.config
 sudo mkdir -pv /use/local/share/fonts/ttf
 sudo cp -rv ~/.dotfiles/font/* /usr/local/share/fonts/ttf
 fc-cache
-cp -rv ~/.dotfiles/* ~/
+cp -rv ~/.dotfiles ~/
 echo
 echo "Installing XORG display server"
 echo
